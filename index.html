@@ -93,15 +93,15 @@
             transition: all 0.5s ease;
         }
         
+        /* NORMAL Sofia name without decoration */
         .sofia-name {
             color: #ff006e;
             font-weight: 800;
-            background: #ffe5ec;
-            padding: 8px 20px;
-            border-radius: 50px;
-            display: inline-block;
-            margin: 0 8px 15px 8px;
-            border: 3px solid #ffafcc;
+            /* REMOVED: background, padding, border, etc. */
+            display: block;
+            margin-bottom: 15px;
+            font-size: 2.2rem;
+            text-shadow: 1px 1px 0 #ffafcc;
         }
         
         .buttons-wrapper {
@@ -289,6 +289,10 @@
                 font-size: 1.5rem;
             }
             
+            .sofia-name {
+                font-size: 1.8rem;
+            }
+            
             .oui-btn {
                 padding: 18px 40px;
                 font-size: 1.6rem;
@@ -342,7 +346,7 @@
             
             <div class="question-box" id="questionBox">
                 <p class="question" id="questionText">
-                    <span class="sofia-name">Sofia</span><br>
+                    <span class="sofia-name">Sofia</span>
                     veux-tu sortir vendredi ? 
                     <span style="font-size: 2rem; display: block; margin-top: 15px;">😊</span>
                 </p>
