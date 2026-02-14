@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cute-Card</title>
+    <title>For mom 💌</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -329,41 +329,41 @@
     
     <div class="container">
         <div class="card">
-            <h1 class="title" id="mainTitle">Question pour toi ✨</h1>
+            <h1 class="title" id="mainTitle">A special question 💕</h1>
             
             <div class="question-box" id="questionBox">
                 <p class="question" id="questionText">
-                    <strong style="color: #ff006e; font-size: 2rem; display: block; margin-bottom: 10px;">Sofia</strong>
-                    veux-tu sortir vendredi ? 
-                    <span style="font-size: 2rem; display: block; margin-top: 15px;">😊</span>
+                    <strong style="color: #ff006e; font-size: 2rem; display: block; margin-bottom: 10px;">Mom</strong>
+                    would you be my Valentine? 
+                    <span style="font-size: 2rem; display: block; margin-top: 15px;">💗</span>
                 </p>
             </div>
             
             <div class="celebration-container" id="celebrationContainer">
-                <div class="yay-text">🎉 YAY! À vendredi! 🎉</div>
+                <div class="yay-text">🎉 YAY! You're the best, Mom! 🎉</div>
                 
                 <div class="celebration-gif-container">
-                    <img class="celebration-gif" id="celebrationGif" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Man Celebrating">
+                    <img class="celebration-gif" id="celebrationGif" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Heartwarming Celebration">
                 </div>
                 
-                <div class="final-message" id="finalMessage">✨ On se voit vendredi! ✨</div>
+                <div class="final-message" id="finalMessage">✨ Happy Valentine's Day! ✨</div>
             </div>
             
             <div class="buttons-wrapper">
                 <button class="oui-btn" id="ouiBtn">
-                    <i class="fas fa-heart"></i> OUI !
+                    <i class="fas fa-heart"></i> YES !
                 </button>
                 
                 <button class="non-btn" id="nonBtn">
-                    <i class="fas fa-grin-tongue-squint"></i> Non 
-                    <span class="shy-text">(shy 😈)</span>
+                    <i class="fas fa-grin-tongue-squint"></i> No 
+                    <span class="shy-text">(can't catch me 😜)</span>
                 </button>
             </div>
             
             <div class="message" id="message"></div>
             
             <div class="footer">
-                <p>Le bouton "Non" fuit partout sur la page! 😉</p>
+                <p>The "No" button runs away ... try to catch it! 😉</p>
             </div>
         </div>
     </div>
@@ -440,16 +440,16 @@
                 // Show message 40% of the time
                 if (Math.random() > 0.6) {
                     const messages = [
-                        "TÉLÉPORTATION! ⚡",
-                        "POOF! Disparu! ✨",
-                        "Où suis-je? 😵",
-                        "Trop rapide! 🚀",
-                        "Téléporté! 🔮",
-                        "Haha! Impossible! 😈",
-                        "Essaie encore! 💨",
-                        "Tu me cherches? 👀",
-                        "Bip bip! Téléporté! 🌀",
-                        "Disparu comme par magie! 🪄"
+                        "TELEPORT! ⚡",
+                        "POOF! Gone! ✨",
+                        "Where am I? 😵",
+                        "Too fast! 🚀",
+                        "Teleported! 🔮",
+                        "Haha! Nice try! 😈",
+                        "Try again! 💨",
+                        "Looking for me? 👀",
+                        "Beep beep! 🌀",
+                        "Vanished! 🪄"
                     ];
                     message.textContent = messages[Math.floor(Math.random() * messages.length)];
                     message.style.display = 'block';
@@ -533,13 +533,13 @@
                     }, i * 50);
                 }
                 
-                message.textContent = "Presque! Mais téléporté! 🌀";
+                message.textContent = "So close! But POOF! 🌀";
                 message.style.display = 'block';
             });
             
             // REMOVED AUTO-TELEPORT - Button only moves when mouse approaches
             
-            // When OUI is clicked
+            // When YES is clicked
             ouiBtn.addEventListener('click', function() {
                 isCelebrating = true;
                 
@@ -556,7 +556,7 @@
                 mainTitle.style.transform = 'translateY(-20px)';
                 
                 setTimeout(() => {
-                    mainTitle.textContent = 'YAY! ✨';
+                    mainTitle.textContent = '💖 Love you, Mom! 💖';
                     mainTitle.style.opacity = '1';
                     mainTitle.style.transform = 'translateY(0)';
                     
@@ -600,7 +600,7 @@
             // Create confetti
             function createConfetti() {
                 const confetti = document.createElement('div');
-                const emojis = ['🎉', '✨', '🎊', '🥳', '💖', '🌟', '😊', '💕', '🌀', '⚡'];
+                const emojis = ['🎉', '✨', '🎊', '🥳', '💖', '🌟', '😊', '💕', '🌀', '⚡', '🌸', '💗'];
                 confetti.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
                 confetti.style.position = 'fixed';
                 confetti.style.fontSize = (Math.random() * 30 + 15) + 'px';
@@ -626,7 +626,7 @@
             }
             
             // Initial message
-            message.textContent = "Essaie d'attraper le bouton 'Non'... Bonne chance! 😈";
+            message.textContent = "Try to catch the 'No' button... Good luck! 😈";
             message.style.display = 'block';
         });
     </script>
